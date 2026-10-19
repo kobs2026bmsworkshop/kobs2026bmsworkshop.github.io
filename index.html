@@ -37,6 +37,10 @@ h2{color:var(--navy);font-size:2rem;margin:0 0 22px;padding-left:14px;border-lef
 .brk{padding:12px 20px;margin-bottom:12px;background:#d9f0f3;border-radius:10px;display:flex;gap:18px}
 .note{font-size:.95rem;color:#5b6b7a}
 a{color:var(--teal)}
+.em{color:var(--teal);font-weight:600}
+.lg{display:flex;align-items:center;gap:14px}
+.lg img{display:block;height:30px}
+.lg i{width:1px;height:24px;background:#cbd5e1}
 footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:32px 5vw;font-size:.95rem}
 footer a{color:#fff}
 @media(max-width:600px){.row summary{flex-direction:column;gap:4px}.row .d{padding-left:20px}}
@@ -46,7 +50,7 @@ th{width:25%;background:var(--bg);color:var(--navy)}
 </style>
 </head>
 <body>
-<nav><b style="display:flex;align-items:center;gap:10px"><img src="logo.gif" alt="한국전지학회" height="32">KOBS 2026 · BMS</b><div><a href="#about">소개</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#links">링크</a><a href="#contact">문의</a></div></nav>
+<nav><div class="lg"><a href="https://kobs.or.kr" target="_blank" rel="noopener"><img src="logo.gif" alt="한국전지학회"></a><i></i><a href="https://www.kentech.ac.kr/main.do" target="_blank" rel="noopener"><img src="kentech.png" alt="한국에너지공과대학교 KENTECH"></a></div><div><a href="#about">소개</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#links">링크</a><a href="#contact">문의</a></div></nav>
 
 <header>
   <small>2026 한국전지학회 정기총회 및 추계학술대회</small>
@@ -90,8 +94,8 @@ th{width:25%;background:var(--bg);color:var(--navy)}
 
 <section id="contact"><div class="w">
   <h2>문의</h2>
-  <p><b>BMS 심포지엄 문의</b><br><a href="mailto:hblee@kentech.ac.kr">hblee@kentech.ac.kr</a></p>
-  <p><b>학술대회 등록·행사 전반 문의</b> (한국전지학회 사무국)<br><a href="mailto:kobs@kobs.or.kr">kobs@kobs.or.kr</a></p>
+  <p><b>BMS 심포지엄 문의</b><br>송주현 교수 · <span class="em">jusong@kentech.ac.kr</span><br>이현빈 연구원 · <span class="em">hblee@kentech.ac.kr</span></p>
+  <p><b>학술대회 등록·행사 전반 문의</b> (한국전지학회 사무국)<br><span class="em">kobs@kobs.or.kr</span></p>
 </div></section>
 
 <footer>© 2026 한국전지학회 BMS 심포지엄 · <a href="https://kobs.or.kr" target="_blank" rel="noopener">kobs.or.kr</a></footer>
