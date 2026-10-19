@@ -4,54 +4,58 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BMS 심포지엄 | 2026 한국전지학회 추계학술대회</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-:root{--navy:#0b1f4d;--blue:#1d4ed8;--bg:#f5f7fb;--ink:#1e293b;--line:#dde3ee}
+:root{--navy:#071a33;--teal:#0b7a88;--yel:#ffe600;--bg:#eef6f8;--ink:#1e293b;--line:#d5e3e8}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Pretendard","Malgun Gothic",sans-serif;color:var(--ink);background:#fff;line-height:1.7}
-nav{position:sticky;top:0;z-index:9;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:12px 5vw;background:#fffffff2;backdrop-filter:blur(6px);box-shadow:0 1px 6px #0001}
-nav b{color:var(--navy)}
-nav a{margin-left:18px;color:var(--navy);text-decoration:none;font-size:14px;font-weight:600}
-header{text-align:center;color:#fff;padding:90px 5vw 70px;background:linear-gradient(135deg,var(--navy),var(--blue))}
-header small{letter-spacing:2px;opacity:.8}
-header h1{font-size:clamp(28px,5vw,46px);margin:12px 0;line-height:1.3}
-header p{font-size:18px;margin:0 0 24px}
-.btn{display:inline-block;background:#fff;color:var(--blue);padding:12px 28px;border-radius:999px;font-weight:700;text-decoration:none}
-.info{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;background:var(--navy);color:#fff;padding:24px 5vw}
-#cd{display:flex;gap:14px;font-size:28px;font-weight:700}
-#cd span small{display:block;font-size:11px;font-weight:400;opacity:.7}
-section{padding:64px 5vw}
+html{scroll-behavior:smooth;font-size:18px}
+h1,h2,p,b{word-break:keep-all}
+body{margin:0;font-family:"Pretendard Variable",Pretendard,"Malgun Gothic",sans-serif;color:var(--ink);background:#fff;line-height:1.75}
+nav{position:sticky;top:0;z-index:9;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 5vw;background:#fffffff2;backdrop-filter:blur(6px);box-shadow:0 1px 6px #0001}
+nav b{color:var(--navy);font-size:1.05rem}
+nav a{margin-left:20px;color:var(--navy);text-decoration:none;font-size:1rem;font-weight:600}
+header{text-align:center;color:#fff;padding:100px 5vw 90px;background:linear-gradient(135deg,#071a33,#0b3b5c 55%,#0f7f8f)}
+header small{display:block;font-size:1rem;letter-spacing:1px;color:#7fe3ee}
+header h1{font-size:clamp(32px,6vw,56px);margin:14px 0;line-height:1.25}
+header p{font-size:1.2rem;margin:0}
+.info{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;background:var(--navy);color:#fff;padding:26px 5vw;font-size:1.05rem}
+.info b{color:var(--yel);font-size:1.25rem}
+#cd{display:flex;gap:22px;font-size:2rem;font-weight:700;color:#fff}
+#cd span{text-align:center}
+#cd span small{display:block;font-size:.8rem;font-weight:400;color:#7fe3ee}
+section{padding:72px 5vw}
 .w{max-width:1000px;margin:auto}
 section.alt{background:var(--bg)}
-h2{color:var(--navy);font-size:28px;margin:0 0 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
-.ph{width:96px;height:96px;margin:0 auto 10px;border-radius:50%;background:#e2e8f0;color:#64748b;font-size:12px;display:flex;align-items:center;justify-content:center}
-.logo{display:inline-block;margin-top:6px;padding:2px 10px;border:1px dashed #94a3b8;color:#94a3b8;font-size:11px;border-radius:4px}
-.card b{display:block;color:var(--navy)}
-.card span{font-size:14px;color:#475569}
-.row{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
-.row summary{cursor:pointer;padding:14px 18px;display:flex;gap:16px;list-style:none}
+h2{color:var(--navy);font-size:2rem;margin:0 0 22px;padding-left:14px;border-left:6px solid var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 16px;text-align:center}
+.ph{width:140px;height:140px;margin:0 auto 12px;border-radius:50%;background:#dbe8ec;overflow:hidden}
+.ph svg{width:100%;height:100%;fill:#8fb0ba}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.card b{display:block;color:var(--navy);font-size:1.1rem}
+.card span{font-size:.95rem;color:#475569}
+.row{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:12px}
+.row summary{cursor:pointer;padding:16px 20px;display:flex;gap:18px;list-style:none}
 .row summary::-webkit-details-marker{display:none}
-.t{min-width:110px;font-weight:700;color:var(--blue)}
-.row em{display:block;font-style:normal;font-size:14px;color:#64748b}
-.row .d{padding:0 18px 16px 142px;font-size:15px}
-.row .d i{display:block;color:#64748b;margin-bottom:8px}
-.brk{padding:10px 18px;margin-bottom:10px;background:#e8eefb;border-radius:10px;display:flex;gap:16px}
-.note{font-size:14px;color:#64748b}
-footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:30px 5vw;font-size:14px}
+.t{min-width:125px;font-weight:700;color:var(--teal)}
+.row em{display:block;font-style:normal;font-size:.95rem;color:#5b6b7a}
+.row .d{padding:0 20px 18px 163px;font-size:1rem}
+.row .d i{display:block;color:#5b6b7a;margin-bottom:8px;font-size:.95rem}
+.brk{padding:12px 20px;margin-bottom:12px;background:#d9f0f3;border-radius:10px;display:flex;gap:18px}
+.note{font-size:.95rem;color:#5b6b7a}
+a{color:var(--teal)}
+footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:32px 5vw;font-size:.95rem}
 footer a{color:#fff}
-@media(max-width:600px){.row summary{flex-direction:column;gap:4px}.row .d{padding-left:18px}}
+@media(max-width:600px){.row summary{flex-direction:column;gap:4px}.row .d{padding-left:20px}}
 </style>
 </head>
 <body>
-<nav><b>KOBS 2026 · BMS</b><div><a href="#about">소개</a><a href="#speakers">연사</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#contact">문의</a></div></nav>
+<nav><b style="display:flex;align-items:center;gap:10px"><img src="logo.gif" alt="한국전지학회" height="32">KOBS 2026 · BMS</b><div><a href="#about">소개</a><a href="#speakers">연사</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#contact">문의</a></div></nav>
 
 <header>
   <small>2026 한국전지학회 정기총회 및 추계학술대회</small>
   <h1>배터리관리시스템(BMS) 심포지엄</h1>
   <p>EIS · 물리 기반 모델링 · AI가 여는 차세대 BMS</p>
-  <a class="btn" href="https://kobs.or.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20260601&B_CATE=BBC1" target="_blank" rel="noopener">학술대회 등록 안내</a>
 </header>
 
 <div class="info">
@@ -63,7 +67,7 @@ footer a{color:#fff}
   <h2>심포지엄 소개</h2>
   <p>전기차와 ESS를 넘어 UAM, 로보틱스로 배터리 활용이 확대되면서, BMS는 단순한 상태 감시를 넘어 열화와 안전성을 함께 관리하는 기술로 진화하고 있습니다.</p>
   <p>본 심포지엄은 전기화학 임피던스 분광법(EIS)을 중심으로 한 진단 기술과 반도체·회로 구현, 그리고 물리 모델과 AI를 결합한 차세대 BMS 전략을 학계와 산업계 연사들과 함께 논의합니다.</p>
-  <p class="note">주관: 한국에너지공과대학교(KENTECH)</p>
+  <p class="note">주관: 한국에너지공과대학교</p>
 </div></section>
 
 <section class="alt" id="speakers"><div class="w">
@@ -80,12 +84,13 @@ footer a{color:#fff}
 <section class="alt" id="location"><div class="w">
   <h2>장소</h2>
   <p>📍 충남대학교 정심화국제문화회관 <b>백마홀</b><br>2026년 11월 6일(금) 09:00 – 12:00</p>
-  <p class="note">오시는 길·지도: TBD</p>
+  <iframe title="지도" loading="lazy" style="width:100%;height:360px;border:0;border-radius:12px" src="https://maps.google.com/maps?q=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90+%EC%A0%95%EC%8B%AC%ED%99%94%EA%B5%AD%EC%A0%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80&output=embed"></iframe>
 </div></section>
 
 <section id="contact"><div class="w">
   <h2>문의</h2>
-  <p>(사)한국전지학회 사무국 · <a href="mailto:kobs@kobs.or.kr">kobs@kobs.or.kr</a> · Tel. 010-4058-7833<br>심포지엄 담당 연락처: TBD</p>
+  <p><b>BMS 심포지엄 문의</b><br><a href="mailto:hblee@kentech.ac.kr">hblee@kentech.ac.kr</a></p>
+  <p><b>학술대회 등록·행사 전반 문의</b> (한국전지학회 사무국)<br><a href="mailto:kobs@kobs.or.kr">kobs@kobs.or.kr</a></p>
 </div></section>
 
 <footer>© 2026 한국전지학회 BMS 심포지엄 · <a href="https://kobs.or.kr" target="_blank" rel="noopener">kobs.or.kr</a></footer>
@@ -96,18 +101,18 @@ const S=[
 {t:"09:40–10:00",n:"김종훈 교수",o:"충남대학교 전기공학과",k:"AI 및 전기화학적 해석과 디지털 트윈 통합 기반 차세대 BMS 고도화 전략",a:["기존 BMS는 전압·전류·온도 등 전기적 신호에 기반한 보호 및 안전 운용에 초점을 두고 있어, 셀 내부 전기화학 반응의 변화를 조기에 감지하기 어렵고 응용 분야·사용자 패턴·운용 환경에 따른 특성 변화를 반영하는 데 한계가 있다. 본 발표에서는 이러한 한계를 극복하기 위해 전기화학 임피던스 분광법(EIS), 인공지능(AI), 디지털 트윈을 통합한 차세대 BMS 고도화 전략을 제시한다.","첫째, 별도 측정 장비 없이 비주기 운용 데이터로부터 STFT 기반으로 임피던스를 추출하는 Passive EIS(PEIS) 기법을 개발하고, DTW 기반 유사도 평가로 기존 EIS와의 일치성을 검증하며, DRT 변환을 통해 정상·이상 셀을 구분하고 팩 내 이상 모듈을 검출하는 안전 진단 기술을 소개한다. 둘째, 모듈·팩 구조 및 센싱 라인 접촉 조건에 따른 기생 성분에 의한 EIS 왜곡을 보정하는 등가회로 모델을 설계하고, 보정된 EIS 지표에서 SOC·전류 영향을 제거하여 온도 민감 특징을 추출하는 센서리스 온도 추정 기술을 제시한다. 셋째, 초기 100사이클의 누적 건전성 지표(HI) 통계와 IC 시그니처를 활용한 Knee point 인식 Temporal VAE 기반 데이터 증강과 Multi-encoder·Diffusion 모델을 결합하여 Knee point 이후 가속 열화 구간을 반영하는 조기 RUL 예측 기법을 다룬다. 넷째, 전기-열 연성 모델, 운용 중 고장 시나리오, 다중 스케일 열화 시뮬레이션을 통합한 ESS 디지털 트윈 플랫폼을 구축하여 고장 데이터베이스를 확보하고, RLS 기반 실시간 파라미터 추정을 통한 이상 셀 진단과 직·병렬 교체 전략의 에너지·불균형·수명 영향 평가를 통해 운용·교체 가이드라인을 도출한다.","본 전략은 안전 중심의 기존 BMS를 응용·사용자 맞춤형 최적 제어가 가능한 지능형 BMS로 확장하는 기반을 제공할 것으로 기대된다."],kw:"차세대 BMS, Passive EIS, EIS 보정, 데이터 증강, 디지털 트윈"},
 {t:"10:00–10:20",n:"이윤구 교수",o:"KAIST 조천식모빌리티대학원",k:"Advanced Physics-guided Battery Management Technology and Application",a:["리튬이온전지의 활용이 전기차와 에너지저장시스템(ESS)에서 도심항공모빌리티(UAM), 로보틱스 등으로 확대되면서, 배터리 관리 시스템(BMS)에는 단순한 상태 감시를 넘어 열화와 안전성을 함께 관리하는 기술이 요구되고 있다. 최근 실차 데이터 분석은 팩 수준 성능 손실의 주요 원인이 SOC 불균형보다 셀 간 노화 속도 차이에 있음을 보여주며, 이는 셀 단위 열화를 물리적으로 이해하고 관리하는 접근이 필요함을 시사한다.","본 발표에서는 원자에서 시스템에 이르는 멀티스케일 관점과 전기화학·열·기계·열화를 아우르는 멀티피직스 모델링을 실험 및 AI와 결합한 물리 기반(physics-guided) 배터리 관리 연구의 방향을 소개한다. 이 연구는 진단·관측·처방·검증의 네 축으로 구성되며, 실제 운전 조건에서의 열화·발열 원인 규명, 물리정보 신경망(PINN) 등을 활용한 SOH·온도 추정, 열화 인지형 밸런싱 제어와 셀·모듈 설계, 연동 해석(co-simulation)과 HIL 시험을 통한 시스템 수준 검증을 하나의 흐름으로 연결한다. 끝으로 셀별 열화 속도를 추정하고 이를 제어와 설계에 반영하는 통합 프레임워크의 발전 방향을 논의한다."],kw:"배터리 관리 시스템(BMS), 멀티스케일·멀티피직스 모델링, 물리정보 신경망(PINN), 상태 추정, 열화 인지 셀 밸런싱"},
 {b:"10:20–10:40",n:"커피 브레이크 / 네트워킹"},
-{t:"10:40–11:00",n:"김용천 부사장",o:"아나베틱 세미 (AnaBatIC Semiconductor)",k:"배터리셀의 EIS측정기능을 탑재한 아날로그 칩의 개발 방향 분석",a:["전기차 및 에너지저장장치(ESS) 보급이 확대됨에 따라 배터리 안전성 확보와 정밀한 상태 진단을 위한 차세대 배터리 관리 시스템(BMS) 기술의 중요성이 더욱 커지고 있다. 기존의 단순 전압·온도 모니터링 방식을 넘어, 배터리 내부의 전기화학적 특성을 정밀하게 분석할 수 있는 전기화학 임피던스 분광법(EIS)이 핵심 진단 기술로 주목받고 있다. 이에 따라 개별 배터리 셀 측정과 EIS 기반 진단 기능을 단일 칩에 집적화하려는 BMS용 아날로그 프런트엔드(AFE) 반도체의 기술적 요구사항도 빠르게 고도화되는 추세이다.","본 발표에서는 배터리 셀 단위의 EIS 측정을 구현하기 위한 아날로그 칩 설계의 주요 과제와 기술적 고려사항을 폭넓게 살펴본다. 아울러 정밀 진단 기능이 탑재된 차세대 BMS용 아날로그 반도체의 개발 방향을 조망하고, 이를 통한 배터리 시스템의 안전성 및 효율성 향상 가능성을 함께 논의한다."],kw:"배터리 관리 시스템(BMS), 전기화학 임피던스 분광법(EIS), 아날로그 프런트엔드(AFE), 배터리 상태 진단"},
+{t:"10:40–11:00",n:"김용천 부사장",o:"아나베틱 세미",k:"배터리셀의 EIS측정기능을 탑재한 아날로그 칩의 개발 방향 분석",a:["전기차 및 에너지저장장치(ESS) 보급이 확대됨에 따라 배터리 안전성 확보와 정밀한 상태 진단을 위한 차세대 배터리 관리 시스템(BMS) 기술의 중요성이 더욱 커지고 있다. 기존의 단순 전압·온도 모니터링 방식을 넘어, 배터리 내부의 전기화학적 특성을 정밀하게 분석할 수 있는 전기화학 임피던스 분광법(EIS)이 핵심 진단 기술로 주목받고 있다. 이에 따라 개별 배터리 셀 측정과 EIS 기반 진단 기능을 단일 칩에 집적화하려는 BMS용 아날로그 프런트엔드(AFE) 반도체의 기술적 요구사항도 빠르게 고도화되는 추세이다.","본 발표에서는 배터리 셀 단위의 EIS 측정을 구현하기 위한 아날로그 칩 설계의 주요 과제와 기술적 고려사항을 폭넓게 살펴본다. 아울러 정밀 진단 기능이 탑재된 차세대 BMS용 아날로그 반도체의 개발 방향을 조망하고, 이를 통한 배터리 시스템의 안전성 및 효율성 향상 가능성을 함께 논의한다."],kw:"배터리 관리 시스템(BMS), 전기화학 임피던스 분광법(EIS), 아날로그 프런트엔드(AFE), 배터리 상태 진단"},
 {t:"11:00–11:20",n:"정준원 교수",o:"숙명여자대학교 전자공학과",k:"배터리 EIS를 위한 집적 회로 기술",a:["정확한 배터리 진단을 위해서 Electrochemical impedance spectroscopy (EIS) 기술이 널리 사용되고 있다. 하지만 기존의 EIS는 bench-top 장비로 수행되어 배터리 관리 시스템에 탑재하는데 제약이 있다. 따라서 경량화된 집적 EIS 회로 기술이 요구된다. 본 강연에서는 이를 위한 고려 사항과 회로 기술, 연구 결과를 살펴본다."],kw:"배터리 진단, EIS, 집적회로, 경량화"},
 {t:"11:20–11:40",n:"김상복 상무",o:"(주)민테크",k:"임피던스에서 안전지표로 — EIS-BMS 기반 전기차·ESS 배터리 안전성 진단 체계",e:"From Impedance to Safety: An EIS-BMS-based Framework for Safety Diagnostics of EV and ESS Batteries",a:["EIS 임피던스는 전압·전류·온도 기반 BMS 신호로는 드러나지 않는 셀 내부 전기화학적 열화·결함을 포착해 전기차·ESS 배터리의 화재 안전성 진단을 보강한다. 리튬 석출·내부 미세단락·전해질 열화 등 열폭주 전조는 임피던스 특징에 각인되며, 이를 정량적 안전지표로 전환할 수 있다. 본 강연은 EIS-BMS CMU 기반 온보드 상시 모니터링을 전기차 배터리·BESS에 적용하는 방향과, 3단계 안전 등급 판정 및 EU 배터리법(EUBR)의 배터리 여권(2027) 의무화 등 규제 대응 방안을 제안한다."],kw:"전기화학 임피던스 분광법(EIS); 전기차·ESS 배터리; 화재안전성·열폭주 전조; 온보드 상시 모니터링 — EIS-BMS CMU; EU 배터리법·배터리 여권"},
-{t:"11:40–12:00",n:"송주현 교수",o:"한국에너지공과대학교 (KENTECH)",k:"Battery lifetime management via human-centric contextual learning",a:["능동형 배터리 관리 기술은 '배터리 수명 연장'과 '필요할 때 배터리를 즉시 사용할 수 없는 위험(가용성 저하)'이라는 상충 관계에 부딪혀 왔다. 배터리를 보호하기 위해 충전을 늦추거나 제한하면 정작 운전자가 출발하려 할 때 충전이 덜 되어 있을 수 있는데, 지금까지는 사람의 이동 패턴이 불규칙하고 변수가 많아 이를 정확히 예측하기 어려웠기 때문에 능동형 배터리 관리 기능을 실제로 적용하는 데 한계가 있었다.","본 연구에서는 사용자 중심의 생활 데이터에서 얻은 'Context 기반 예측 정보'를 활용하면 사람의 이동 시점을 훨씬 더 정확하게 예측할 수 있음을 입증한다. 이 예측 기술을 출발 직전에 맞춰 100% 충전을 마치는 '지연 완전 충전(delayed full-charging)' 기법에 적용한 결과, 전기차 출발 시간 예측 오차(평균 절대 오차)를 평균 35분 수준으로 줄여 단순 과거 기록에만 의존하던 기존 방식보다 예측 정확도를 32% 높였다. 이를 통해 배터리를 가혹한 조건으로 충전·사용하는 운전자의 경우 배터리 기대 수명을 8.0~13.9년까지 늘릴 수 있어 기술의 실용성을 확인하였다. 이는 배터리 전체 용량의 8~10%를 아예 쓰지 못하도록 고정적으로 제한하는 방식(정적 용량 제한)과 유사한 수준의 수명 보호 효과를 내면서도, 실제 주행 가능 용량은 그대로 유지할 수 있다는 장점이 있다. 본 연구 결과는 사용자의 행동 Context를 학습을 접목한 배터리 관리 알고리듬의 토대를 마련한다."],kw:"능동형 배터리 수명관리, 인간중심 Context 학습, 출발시각 예측, 지연 완전 충전"}
+{t:"11:40–12:00",n:"송주현 교수",o:"한국에너지공과대학교",k:"Battery lifetime management via human-centric contextual learning",a:["능동형 배터리 관리 기술은 '배터리 수명 연장'과 '필요할 때 배터리를 즉시 사용할 수 없는 위험(가용성 저하)'이라는 상충 관계에 부딪혀 왔다. 배터리를 보호하기 위해 충전을 늦추거나 제한하면 정작 운전자가 출발하려 할 때 충전이 덜 되어 있을 수 있는데, 지금까지는 사람의 이동 패턴이 불규칙하고 변수가 많아 이를 정확히 예측하기 어려웠기 때문에 능동형 배터리 관리 기능을 실제로 적용하는 데 한계가 있었다.","본 연구에서는 사용자 중심의 생활 데이터에서 얻은 'Context 기반 예측 정보'를 활용하면 사람의 이동 시점을 훨씬 더 정확하게 예측할 수 있음을 입증한다. 이 예측 기술을 출발 직전에 맞춰 100% 충전을 마치는 '지연 완전 충전(delayed full-charging)' 기법에 적용한 결과, 전기차 출발 시간 예측 오차(평균 절대 오차)를 평균 35분 수준으로 줄여 단순 과거 기록에만 의존하던 기존 방식보다 예측 정확도를 32% 높였다. 이를 통해 배터리를 가혹한 조건으로 충전·사용하는 운전자의 경우 배터리 기대 수명을 8.0~13.9년까지 늘릴 수 있어 기술의 실용성을 확인하였다. 이는 배터리 전체 용량의 8~10%를 아예 쓰지 못하도록 고정적으로 제한하는 방식(정적 용량 제한)과 유사한 수준의 수명 보호 효과를 내면서도, 실제 주행 가능 용량은 그대로 유지할 수 있다는 장점이 있다. 본 연구 결과는 사용자의 행동 Context를 학습을 접목한 배터리 관리 알고리듬의 토대를 마련한다."],kw:"능동형 배터리 수명관리, 인간중심 Context 학습, 출발시각 예측, 지연 완전 충전"}
 ];
 const P=S.filter(x=>x.k);
-document.getElementById("sp").innerHTML=P.map(x=>`<div class="card"><div class="ph">Coming soon</div><b>${x.n}</b><span>${x.o}</span><br><span class="logo">로고 TBD</span></div>`).join("");
+document.getElementById("sp").innerHTML=P.map(x=>`<div class="card"><div class="ph">${x.p?`<img src="photos/${x.p}" alt="${x.n}">`:`<svg viewBox="0 0 96 96"><circle cx="48" cy="38" r="16"/><path d="M16 96c0-22 14-34 32-34s32 12 32 34z"/></svg>`}</div><b>${x.n}</b><span>${x.o}</span></div>`).join("");
 document.getElementById("sc").innerHTML=S.map(x=>x.b?`<div class="brk"><span class="t">${x.b}</span>${x.n}</div>`:
 `<details class="row"><summary><span class="t">${x.t}</span><span><b>${x.k}</b>${x.e?`<em>${x.e}</em>`:""}<em>${x.n} · ${x.o}</em></span></summary><div class="d">${x.a.map(p=>`<p>${p}</p>`).join("")}<i>키워드: ${x.kw}</i></div></details>`).join("");
 const t=new Date("2026-11-06T09:00:00+09:00"),el=document.getElementById("cd");
 function tick(){let s=Math.max(0,Math.floor((t-Date.now())/1000));
-el.innerHTML=[["일",86400],["시간",3600],["분",60],["초",1]].map(([n,u])=>{const x=Math.floor(s/u);s-=x*u;return `<span>${String(x).padStart(2,"0")}<small>${n}</small></span>`}).join(":")}
+el.innerHTML=[["일",86400],["시간",3600],["분",60],["초",1]].map(([n,u])=>{const x=Math.floor(s/u);s-=x*u;return `<span>${String(x).padStart(2,"0")}<small>${n}</small></span>`}).join("")}
 tick();setInterval(tick,1000);
 </script>
 </body>
