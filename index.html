@@ -27,13 +27,6 @@ section{padding:72px 5vw}
 .w{max-width:1000px;margin:auto}
 section.alt{background:var(--bg)}
 h2{color:var(--navy);font-size:2rem;margin:0 0 22px;padding-left:14px;border-left:6px solid var(--teal)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 16px;text-align:center}
-.ph{width:140px;height:140px;margin:0 auto 12px;border-radius:50%;background:#dbe8ec;overflow:hidden}
-.ph svg{width:100%;height:100%;fill:#8fb0ba}
-.ph img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
-.card b{display:block;color:var(--navy);font-size:1.1rem}
-.card span{font-size:.95rem;color:#475569}
 .row{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:12px}
 .row summary{cursor:pointer;padding:16px 20px;display:flex;gap:18px;list-style:none}
 .row summary::-webkit-details-marker{display:none}
@@ -47,10 +40,13 @@ a{color:var(--teal)}
 footer{background:var(--navy);color:#cbd5e1;text-align:center;padding:32px 5vw;font-size:.95rem}
 footer a{color:#fff}
 @media(max-width:600px){.row summary{flex-direction:column;gap:4px}.row .d{padding-left:20px}}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{padding:12px 14px;border:1px solid var(--line);text-align:left}
+th{width:25%;background:var(--bg);color:var(--navy)}
 </style>
 </head>
 <body>
-<nav><b style="display:flex;align-items:center;gap:10px"><img src="logo.gif" alt="한국전지학회" height="32">KOBS 2026 · BMS</b><div><a href="#about">소개</a><a href="#speakers">연사</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#contact">문의</a></div></nav>
+<nav><b style="display:flex;align-items:center;gap:10px"><img src="logo.gif" alt="한국전지학회" height="32">KOBS 2026 · BMS</b><div><a href="#about">소개</a><a href="#schedule">일정</a><a href="#location">장소</a><a href="#links">링크</a><a href="#contact">문의</a></div></nav>
 
 <header>
   <small>2026 한국전지학회 정기총회 및 추계학술대회</small>
@@ -67,24 +63,29 @@ footer a{color:#fff}
   <h2>심포지엄 소개</h2>
   <p>전기차와 ESS를 넘어 UAM, 로보틱스로 배터리 활용이 확대되면서, BMS는 단순한 상태 감시를 넘어 열화와 안전성을 함께 관리하는 기술로 진화하고 있습니다.</p>
   <p>본 심포지엄은 전기화학 임피던스 분광법(EIS)을 중심으로 한 진단 기술과 반도체·회로 구현, 그리고 물리 모델과 AI를 결합한 차세대 BMS 전략을 학계와 산업계 연사들과 함께 논의합니다.</p>
-  <p class="note">주관: 한국에너지공과대학교</p>
+  <table>
+    <tr><th>일시</th><td>2026년 11월 6일(금) 09:00 – 12:00</td></tr>
+    <tr><th>장소</th><td>충남대학교 정심화국제문화회관 백마홀</td></tr>
+    <tr><th>주관</th><td>한국에너지공과대학교</td></tr>
+    <tr><th>주제</th><td>EIS 기반 진단, 물리 기반 모델링과 AI, 차세대 BMS</td></tr>
+  </table>
 </div></section>
 
-<section class="alt" id="speakers"><div class="w">
-  <h2>연사</h2>
-  <div class="grid" id="sp"></div>
-</div></section>
-
-<section id="schedule"><div class="w">
+<section class="alt" id="schedule"><div class="w">
   <h2>세부 일정</h2>
   <p class="note">발표를 클릭하면 초록을 볼 수 있습니다.</p>
   <div id="sc"></div>
 </div></section>
 
-<section class="alt" id="location"><div class="w">
+<section id="location"><div class="w">
   <h2>장소</h2>
   <p>📍 충남대학교 정심화국제문화회관 <b>백마홀</b><br>2026년 11월 6일(금) 09:00 – 12:00</p>
   <iframe title="지도" loading="lazy" style="width:100%;height:360px;border:0;border-radius:12px" src="https://maps.google.com/maps?q=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90+%EC%A0%95%EC%8B%AC%ED%99%94%EA%B5%AD%EC%A0%9C%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80&output=embed"></iframe>
+</div></section>
+
+<section class="alt" id="links"><div class="w">
+  <h2>링크</h2>
+  <p><a href="https://kobs.or.kr" target="_blank" rel="noopener">한국전지학회 홈페이지</a><br><a href="https://kobs.or.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20260601&B_CATE=BBC1" target="_blank" rel="noopener">2026 정기총회 및 추계학술대회 안내</a></p>
 </div></section>
 
 <section id="contact"><div class="w">
@@ -106,8 +107,6 @@ const S=[
 {t:"11:20–11:40",n:"김상복 상무",o:"(주)민테크",k:"임피던스에서 안전지표로 — EIS-BMS 기반 전기차·ESS 배터리 안전성 진단 체계",e:"From Impedance to Safety: An EIS-BMS-based Framework for Safety Diagnostics of EV and ESS Batteries",a:["EIS 임피던스는 전압·전류·온도 기반 BMS 신호로는 드러나지 않는 셀 내부 전기화학적 열화·결함을 포착해 전기차·ESS 배터리의 화재 안전성 진단을 보강한다. 리튬 석출·내부 미세단락·전해질 열화 등 열폭주 전조는 임피던스 특징에 각인되며, 이를 정량적 안전지표로 전환할 수 있다. 본 강연은 EIS-BMS CMU 기반 온보드 상시 모니터링을 전기차 배터리·BESS에 적용하는 방향과, 3단계 안전 등급 판정 및 EU 배터리법(EUBR)의 배터리 여권(2027) 의무화 등 규제 대응 방안을 제안한다."],kw:"전기화학 임피던스 분광법(EIS); 전기차·ESS 배터리; 화재안전성·열폭주 전조; 온보드 상시 모니터링 — EIS-BMS CMU; EU 배터리법·배터리 여권"},
 {t:"11:40–12:00",n:"송주현 교수",o:"한국에너지공과대학교",k:"Battery lifetime management via human-centric contextual learning",a:["능동형 배터리 관리 기술은 '배터리 수명 연장'과 '필요할 때 배터리를 즉시 사용할 수 없는 위험(가용성 저하)'이라는 상충 관계에 부딪혀 왔다. 배터리를 보호하기 위해 충전을 늦추거나 제한하면 정작 운전자가 출발하려 할 때 충전이 덜 되어 있을 수 있는데, 지금까지는 사람의 이동 패턴이 불규칙하고 변수가 많아 이를 정확히 예측하기 어려웠기 때문에 능동형 배터리 관리 기능을 실제로 적용하는 데 한계가 있었다.","본 연구에서는 사용자 중심의 생활 데이터에서 얻은 'Context 기반 예측 정보'를 활용하면 사람의 이동 시점을 훨씬 더 정확하게 예측할 수 있음을 입증한다. 이 예측 기술을 출발 직전에 맞춰 100% 충전을 마치는 '지연 완전 충전(delayed full-charging)' 기법에 적용한 결과, 전기차 출발 시간 예측 오차(평균 절대 오차)를 평균 35분 수준으로 줄여 단순 과거 기록에만 의존하던 기존 방식보다 예측 정확도를 32% 높였다. 이를 통해 배터리를 가혹한 조건으로 충전·사용하는 운전자의 경우 배터리 기대 수명을 8.0~13.9년까지 늘릴 수 있어 기술의 실용성을 확인하였다. 이는 배터리 전체 용량의 8~10%를 아예 쓰지 못하도록 고정적으로 제한하는 방식(정적 용량 제한)과 유사한 수준의 수명 보호 효과를 내면서도, 실제 주행 가능 용량은 그대로 유지할 수 있다는 장점이 있다. 본 연구 결과는 사용자의 행동 Context를 학습을 접목한 배터리 관리 알고리듬의 토대를 마련한다."],kw:"능동형 배터리 수명관리, 인간중심 Context 학습, 출발시각 예측, 지연 완전 충전"}
 ];
-const P=S.filter(x=>x.k);
-document.getElementById("sp").innerHTML=P.map(x=>`<div class="card"><div class="ph">${x.p?`<img src="photos/${x.p}" alt="${x.n}">`:`<svg viewBox="0 0 96 96"><circle cx="48" cy="38" r="16"/><path d="M16 96c0-22 14-34 32-34s32 12 32 34z"/></svg>`}</div><b>${x.n}</b><span>${x.o}</span></div>`).join("");
 document.getElementById("sc").innerHTML=S.map(x=>x.b?`<div class="brk"><span class="t">${x.b}</span>${x.n}</div>`:
 `<details class="row"><summary><span class="t">${x.t}</span><span><b>${x.k}</b>${x.e?`<em>${x.e}</em>`:""}<em>${x.n} · ${x.o}</em></span></summary><div class="d">${x.a.map(p=>`<p>${p}</p>`).join("")}<i>키워드: ${x.kw}</i></div></details>`).join("");
 const t=new Date("2026-11-06T09:00:00+09:00"),el=document.getElementById("cd");
